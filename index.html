@@ -106,7 +106,7 @@
                   <p>- Phần mềm cần .NET Framework 4.6.2 để chạy được. Nếu chạy bị báo lỗi thiếu .NET Framework thì các bạn bấm <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53344">vào đây</a></v> để tải, rồi cài vào nhé</p>
                   <p>- Có thể một số phần mềm diệt virus sẽ nhận diện nhầm ShareAccVN là virus.</p>
                   <p>- Những bạn nào có điều kiện thì nên tự mua tài khoản để ủng hộ dịch vụ của họ. Mình không khuyến khích các bạn dùng phần mềm này.</p>
-                  <a href="./download/shareaccvn_v3.0.0.zip" class="button white" style="margin-right: 10px;" target="_blank">Tải cho Windows</a>
+                  <a href="./download/ShareAccVN_v3.0.0.zip" class="button white" style="margin-right: 10px;" target="_blank">Tải cho Windows</a>
                 </div>
                 
                 <div class="hidden-xs hidden-sm col-md-5 text-right w3-content w3-display-container" style="height: 500px; width: 350px;">
@@ -172,7 +172,33 @@
         </div>
     </footer>
 
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
 
+    <!-- Facebook Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "632639240405722");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v10.0'
+            });
+            };
+        
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </div>
+
+    
 <script>
 
     window.onload = function(){
